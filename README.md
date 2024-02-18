@@ -13,6 +13,7 @@ This example is designed to showcase the basics of modern authentication within 
 
 ## Recommendations
 
+- [Next.js Documentation](https://nextjs.org/docs)
 - [jwt.ms](https://jwt.ms) for inspecting your tokens
 - Follow the [Entra ID Blog](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity) to stay up-to-date with the latest developments
 
