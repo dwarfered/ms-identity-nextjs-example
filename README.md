@@ -7,6 +7,7 @@ This example is designed to showcase the basics of modern authentication within 
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/download/)
+- [Next.js - Installation](https://nextjs.org/docs/getting-started/installation)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - A modern web browser
 
