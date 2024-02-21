@@ -13,7 +13,9 @@ This example is designed to showcase the basics of modern authentication within 
 
 ## Recommendations
 
-- [Next.js](https://nextjs.org/docs) for documentation
+- [Next.js by Vercel](https://nextjs.org/docs) framework documentation
+- [SWR by Vercel](https://swr.vercel.app) React Hooks for Data Fetching
 - [jwt.ms](https://jwt.ms) for inspecting your tokens
+- [SPA developers: Migrate to auth code flow with PKCE](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow/)
 - Follow the [Entra ID Blog](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity) to stay up-to-date with the latest developments
 
