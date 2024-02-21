@@ -25,17 +25,24 @@ This example is designed to showcase the basics of modern authentication within 
 - Replace NEXTJS_APP_CLIENT_ID with the Application (client) ID from the created Entra application registration
 - Replace NEXTJS_APP_AUTHORITY with the Entra Tenant Id.
 
+## Installing dependencies
 ```bash
-# Install dependencies
+# Install dependencies from the root of the repo
 npm install
-
-# Run locally (view at http://localhost:3000)
+```
+### Running the application
+```bash
+# Run locally
 npm run dev
 
-# Optionally build
+# Optionally build (and host resulting output seperately)
 # npm run build
-
 ```
 
+1. Open http://localhost:3000 to view in your browser.
+2. Open http://localhost:3000/profile to view a protected route, that if signed in will display profile information.
+3. Open http://localhost:300/example to see an unprotected route.
+
+- The current version of Next.js does not correctly handle redirect requests. So in this sample the popup method is used.
 
 
