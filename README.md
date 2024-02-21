@@ -4,9 +4,6 @@
 <img src="images/repository-open-graph-template.png" width="600"/>
 </p>
 
-<div style="text-align:center"><img src="images/repository-open-graph-template.png" width="600"/></div>
-
-
 A sample to demonstrate the fundamentals of modern authentication with Microsoft identity platform in Next.js using MSAL React.
 
 The [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/v2-overview), incorporating [Entra ID](https://learn.microsoft.com/en-au/entra/fundamentals/whatis) (Azure AD) and [Azure Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/overview) (Azure AD B2C) plays a pivotal role in the Azure cloud ecosystem.
