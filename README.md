@@ -20,9 +20,9 @@ This example is designed to showcase the basics of modern authentication within 
 - Follow the [Entra ID Blog](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity) to stay up-to-date with the latest developments
 
 ## Notable files
-1. `./authConfig.ts` MSAL configuration.
+1. `./authConfig.ts` Configuration of MSAL
 2. `./utils/NavigationClient.ts` The AppRouterInstance and Next.js
-3. `./utils/msGraphFetcher.ts` Implementation of the SWR Fetcher instance for MS Graph Calls
+3. `./utils/msGraphFetcher.ts` Implementation of the SWR Fetcher instance for MS Graph calls including the access token.
 4. `./utils/MsalHelper.ts` Token acquisition from the MSAL library.
 5. `./components/ProfileData.ts` Consuming the SWR service without needing to use props from a parent component.
 
