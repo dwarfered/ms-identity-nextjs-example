@@ -56,7 +56,14 @@ npm run dev
 
 ## Screenshots
 
+### Pending Sign In
 <img src="screenshots/image1.png" width="300">
+
+### Sign In
 <img src="screenshots/image2.png" width="300">
+
+### Signed In
 <img src="screenshots/image3.png" width="300">
+
+### Request Profile Information
 <img src="screenshots/image4.png" width="300">
