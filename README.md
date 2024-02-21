@@ -19,6 +19,13 @@ This example is designed to showcase the basics of modern authentication within 
 - [SPA developers: Migrate to auth code flow with PKCE](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow/)
 - Follow the [Entra ID Blog](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity) to stay up-to-date with the latest developments
 
+## Notable files
+1. `./authConfig.ts` MSAL configuration.
+2. `./utils/NavigationClient.ts` The AppRouterInstance and Next.js
+3. `./utils/msGraphFetcher.ts` Implementation of the SWR Fetcher instance for MS Graph Calls
+4. `./utils/MsalHelper.ts` Token acquisition from the MSAL library.
+5. `./components/ProfileData.ts` Consuming the SWR service without needing to use props from a parent component.
+
 ## Configure the application
 
 - Open ./authConfig.ts in an editor.
@@ -35,13 +42,13 @@ npm install
 # Run locally
 npm run dev
 
-# Optionally build (and host resulting output seperately)
+# Optionally build
 # npm run build
 ```
 
 1. Open http://localhost:3000 to view in your browser.
 2. Open http://localhost:3000/profile to view a protected route, that if signed in will display profile information.
-3. Open http://localhost:300/example to see an unprotected route.
+3. Open http://localhost:3000/example to see an unprotected route.
 
 - The current version of Next.js does not correctly handle redirect requests. So in this sample the popup method is used.
 
