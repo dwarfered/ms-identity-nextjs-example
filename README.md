@@ -19,3 +19,23 @@ This example is designed to showcase the basics of modern authentication within 
 - [SPA developers: Migrate to auth code flow with PKCE](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow/)
 - Follow the [Entra ID Blog](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity) to stay up-to-date with the latest developments
 
+## Configure the application
+
+- Open ./authConfig.ts in an editor.
+- Replace NEXTJS_APP_CLIENT_ID with the Application (client) ID from the created Entra application registration
+- Replace NEXTJS_APP_AUTHORITY with the Entra Tenant Id.
+
+```bash
+# Install dependencies
+npm install
+
+# Run locally (view at http://localhost:3000)
+npm run dev
+
+# Optionally build
+# npm run build
+
+```
+
+
+
