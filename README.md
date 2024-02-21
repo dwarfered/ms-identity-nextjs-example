@@ -24,6 +24,7 @@ Next.js is an open-source React front-end development framework that enables dev
 - [SWR by Vercel](https://swr.vercel.app) React Hooks for Data Fetching
 > :information_source: "SWR is a strategy to first return the data from cache (stale), then send the fetch request (revalidate), and finally come with the up-to-date data."
 - [jwt.ms](https://jwt.ms) for inspecting your tokens
+- [Microsoft Authentication Library (MSAL) for JS](https://github.com/AzureAD/microsoft-authentication-library-for-js)
 - [SPA developers: Migrate implicit to auth code flow with PKCE](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow/)
 - Follow the [Entra ID Blog](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity) to stay up-to-date with the latest developments
 
