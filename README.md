@@ -1,4 +1,7 @@
 # Enable your Next.js Single-Page Application (SPA) to sign-in users and call APIs with the Microsoft identity platform
+
+<img src="images/repository-open-graph-template.png" width="600">
+
 A sample to demonstrate the fundamentals of modern authentication with Microsoft identity platform in Next.js using MSAL React.
 
 The [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/v2-overview), incorporating [Entra ID](https://learn.microsoft.com/en-au/entra/fundamentals/whatis) (Azure AD) and [Azure Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/overview) (Azure AD B2C) plays a pivotal role in the Azure cloud ecosystem.
@@ -58,13 +61,13 @@ npm run dev
 ## Screenshots
 
 ### Pending Sign In
-<img src="screenshots/image1.png" width="300">
+<img src="images/image1.png" width="300">
 
 ### Sign In
-<img src="screenshots/image2.png" width="300">
+<img src="images/image2.png" width="300">
 
 ### Signed In
-<img src="screenshots/image3.png" width="300">
+<img src="images/image3.png" width="300">
 
 ### Request Profile Information
-<img src="screenshots/image4.png" width="300">
+<img src="images/image4.png" width="300">
