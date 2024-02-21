@@ -1,6 +1,7 @@
 # Enable your Next.js Single-Page Application (SPA) to sign-in users and call APIs with the Microsoft identity platform
 
-<img src="images/repository-open-graph-template.png" width="600">
+<div style="text-align:center"><img src="images/repository-open-graph-template.png" width="600"/></div>
+
 
 A sample to demonstrate the fundamentals of modern authentication with Microsoft identity platform in Next.js using MSAL React.
 
