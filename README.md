@@ -39,7 +39,7 @@ Next.js is an open-source React front-end development framework that enables dev
 # Install dependencies from the root of the repo
 npm install
 ```
-### Running the application
+## Running the application
 ```bash
 # Run locally
 npm run dev
@@ -54,4 +54,9 @@ npm run dev
 
 - The current version of Next.js does not correctly handle redirect requests. So in this sample the popup method is used.
 
+## Screenshots
 
+<img src="screenshots/image1.png" width="300">
+<img src="screenshots/image2.png" width="300">
+<img src="screenshots/image3.png" width="300">
+<img src="screenshots/image4.png" width="300">
