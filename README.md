@@ -38,8 +38,8 @@ Next.js is an open-source React front-end development framework that enables dev
 ## Configure the application
 
 - Open ./authConfig.ts in an editor.
-- Replace NEXTJS_APP_CLIENT_ID with the Application (client) ID from the created Entra application registration
-- Replace NEXTJS_APP_AUTHORITY with the Entra Tenant Id.
+- Replace NEXTJS_APP_CLIENT_ID with the Application (client) ID from your created Entra Application Registration.
+- Replace NEXTJS_APP_AUTHORITY with the Entra Tenant Id of your environment.
 
 ## Installing dependencies
 ```bash
