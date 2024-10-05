@@ -1,4 +1,4 @@
-# Enable your Next.js Single-Page Application (SPA) to sign-in users and call APIs with the Microsoft identity platform
+# Authentication with Next.js and Microsoft Graph
 
 <p align="center">
 <img src="images/repository-open-graph-template.png" width="600"/>
