@@ -26,8 +26,8 @@ import { Dismiss24Regular, NavigationRegular } from "@fluentui/react-icons";
 import { useRouter } from "next/navigation";
 
 import { AppsListRegular, HomeRegular } from "@fluentui/react-icons";
-import { useGlobalStyles } from "@/app/lib/utils/fluentUiHelper";
-import { APP_NAME } from "@/app/lib/constants";
+import { useGlobalStyles } from "@/lib/utils/fluentUiHelper";
+import { APP_NAME } from "@/lib/constants";
 
 const useStyles = makeStyles({
   toolbar: {
