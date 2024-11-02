@@ -1,8 +1,14 @@
-'use client';
+"use client";
 
+import dynamic from "next/dynamic";
 import "./globals.css";
 import { AuthProvider } from "@/components/AuthProvider";
+import { webLightTheme } from "@fluentui/react-components";
 
+const DynamicContextProvider = dynamic(
+  () => import("@fluentui/react-components").then((mod) => mod.FluentProvider),
+  { ssr: false }
+);
 
 export default function RootLayout({
   children,
@@ -12,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AuthProvider>{children}</AuthProvider>
+        <DynamicContextProvider theme={webLightTheme}>
+          <AuthProvider>{children}</AuthProvider>
+        </DynamicContextProvider>
       </body>
     </html>
   );
