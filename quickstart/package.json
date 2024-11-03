@@ -15,7 +15,8 @@
     "@fluentui/react-icons": "^2.0.264",
     "next": "14.2.16",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -26,4 +27,3 @@
     "typescript": "^5"
   }
 }
-
