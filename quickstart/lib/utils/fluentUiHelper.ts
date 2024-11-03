@@ -1,4 +1,4 @@
-import { makeStyles, typographyStyles, BrandVariants, createLightTheme, Theme } from "@fluentui/react-components";
+import { makeStyles, typographyStyles, BrandVariants, createLightTheme, Theme, tokens } from "@fluentui/react-components";
 
 export const useGlobalStyles = makeStyles({
   title: typographyStyles.title3,
@@ -13,6 +13,21 @@ export const useGlobalStyles = makeStyles({
     listStyleType: "none",
     paddingLeft: 0,
   },
+
+  toolbarNavButton: {
+    backgroundColor: "#1c1c1c",
+    color: tokens.colorBrandBackgroundInverted,
+    ...typographyStyles.body1Strong,
+    ":hover:active": {
+      backgroundColor: "#333",
+      color: "#fff",
+    },
+    ":hover": {
+      backgroundColor: "#333",
+      color: "#fff",
+    },
+  }
+
 });
 
 const ratingTheme: BrandVariants = {

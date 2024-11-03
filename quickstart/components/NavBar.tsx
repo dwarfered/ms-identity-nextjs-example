@@ -5,29 +5,17 @@ import {
 } from "@azure/msal-react";
 import {
   Button,
-  Drawer,
   makeStyles,
   shorthands,
-  tokens,
   Toolbar,
   ToolbarGroup,
-  ToolbarProps,
-  typographyStyles,
-  DrawerBody,
-  DrawerHeader,
-  DrawerHeaderTitle,
   DrawerProps,
-  Accordion,
-  Body1Strong,
 } from "@fluentui/react-components";
 // import SignInButton from "./SignInButton";
 // import SignOutButton from "./SignOutButton";
-import { Dismiss24Regular, NavigationRegular } from "@fluentui/react-icons";
-import { useRouter } from "next/navigation";
-
-import { AppsListRegular, HomeRegular } from "@fluentui/react-icons";
 import { useGlobalStyles } from "@/lib/utils/fluentUiHelper";
 import { APP_NAME } from "@/lib/constants";
+import { NavOverlay } from "./NavOverlay";
 
 const useStyles = makeStyles({
   toolbar: {
@@ -35,114 +23,41 @@ const useStyles = makeStyles({
     backgroundColor: "#1c1c1c",
     ...shorthands.padding(0),
   },
-  toolbarButton: {
-    backgroundColor: "#1c1c1c",
-    color: tokens.colorBrandBackgroundInverted,
-    ...typographyStyles.body1Strong,
-    ":hover:active": {
-      backgroundColor: "#333",
-      color: "#fff",
-    },
-    ":hover": {
-      backgroundColor: "#333",
-      color: "#fff",
-    },
+  navMobileOverlay: {
     "@media (min-width: 768px)": {
-      display: "none", 
+      display: "none",
     },
   },
-  toolbarButton2: {
-    backgroundColor: "#1c1c1c",
-    color: tokens.colorBrandBackgroundInverted,
-    ...typographyStyles.body1Strong,
-    ":hover:active": {
-      backgroundColor: "#333",
-      color: "#fff",
-    },
-    ":hover": {
-      backgroundColor: "#333",
-      color: "#fff",
-    },
+  navStandard: {
     "@media (max-width: 768px)": {
-      display: "none", 
+      display: "none",
     },
   },
 });
 
 type DrawerType = Required<DrawerProps>["type"];
 
-export const FarGroup = (props: Partial<ToolbarProps>) => {
+export const FarGroup = () => {
   const standardStyles = useGlobalStyles();
   const styles = useStyles();
-  const router = useRouter();
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [type, setType] = React.useState<DrawerType>("overlay");
+  const [type] = React.useState<DrawerType>("overlay");
 
   return (
     <Toolbar aria-label="with Separeted Groups" className={styles.toolbar}>
       <ToolbarGroup role="presentation">
-        <Drawer
-          type={type}
-          separator
-          open={isOpen}
-          onOpenChange={(_, { open }) => setIsOpen(open)}
-        >
-          <DrawerHeader>
-            <DrawerHeaderTitle
-              action={
-                <Button
-                  appearance="subtle"
-                  aria-label="Close"
-                  icon={<Dismiss24Regular />}
-                  onClick={() => setIsOpen(false)}
-                />
-              }
-            >
-              {APP_NAME}
-            </DrawerHeaderTitle>
-          </DrawerHeader>
-
-          <DrawerBody>
-            <Button
-              onClick={() => {
-                router.push("/");
-                setIsOpen(false);
-              }}
-              appearance="subtle"
-              icon={<HomeRegular />}
-              style={{
-                width: "100%",
-                justifyContent: "flex-start", 
-                display: "flex", 
-              }}
-            >
-              <Body1Strong> Home</Body1Strong>
-            </Button>
-            <Accordion defaultOpenItems="1">
-         
-            </Accordion>
-          </DrawerBody>
-        </Drawer>
-
-        <Button
-          shape="square"
-          size="large"
-          className={styles.toolbarButton}
-          appearance="primary"
-          onClick={() => setIsOpen(!isOpen)}
-          icon={<NavigationRegular />}
-        >
-          {type === "inline" ? "Toggle" : APP_NAME}
-        </Button>
-
-        <Button
-          shape="square"
-          size="large"
-          className={styles.toolbarButton2}
-          appearance="primary"
-        >
-          {type === "inline" ? "Toggle" : APP_NAME}
-        </Button>
+        <div className={styles.navMobileOverlay}>
+          <NavOverlay />
+        </div>
+        <div className={styles.navStandard}>
+          <Button
+            shape="square"
+            size="large"
+            className={standardStyles.toolbarNavButton}
+            appearance="primary"
+          >
+            {type === "inline" ? "Toggle" : APP_NAME}
+          </Button>
+        </div>
       </ToolbarGroup>
       <ToolbarGroup role="presentation">
         {/* <SignInSignOutButton /> */}
