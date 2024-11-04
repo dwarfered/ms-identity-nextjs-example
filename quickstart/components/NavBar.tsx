@@ -11,7 +11,7 @@ import {
   ToolbarGroup,
   DrawerProps,
 } from "@fluentui/react-components";
-import { useGlobalStyles } from "@/lib/utils/fluentUiHelper";
+import { useGlobalStyles } from "@/lib/utils/fluentuiHelper";
 import { APP_NAME } from "@/lib/constants";
 import { NavOverlay } from "./NavOverlay";
 import SignInButton from "./SignInButton";

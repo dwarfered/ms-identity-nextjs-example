@@ -14,7 +14,7 @@ import { useRouter } from "next/navigation";
 
 import { HomeRegular } from "@fluentui/react-icons";
 import { APP_NAME } from "@/lib/constants";
-import { useGlobalStyles } from "@/lib/utils/fluentUiHelper";
+import { useGlobalStyles } from "@/lib/utils/fluentuiHelper";
 
 type DrawerType = Required<DrawerProps>["type"];
 

@@ -1,4 +1,4 @@
-import { useGlobalStyles } from "@/lib/utils/fluentUiHelper";
+import { useGlobalStyles } from "@/lib/utils/fluentuiHelper";
 import { handleSignIn } from "@/lib/utils/msalHelper";
 import {
   Avatar,
