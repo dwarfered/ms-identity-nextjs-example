@@ -26,3 +26,9 @@ export async function acquireGraphAccessToken() {
     throw error;
   }
 }
+
+export function handleSignIn() {
+  msalInstance.loginRedirect(loginRequest).catch((e) => {
+    console.error(`loginRedirect failed: ${e}`);
+  });
+}

@@ -16,6 +16,7 @@ import {
 import { useGlobalStyles } from "@/lib/utils/fluentUiHelper";
 import { APP_NAME } from "@/lib/constants";
 import { NavOverlay } from "./NavOverlay";
+import SignInButton from "./SignInButton";
 
 const useStyles = makeStyles({
   toolbar: {
@@ -60,11 +61,9 @@ export const FarGroup = () => {
         </div>
       </ToolbarGroup>
       <ToolbarGroup role="presentation">
-        {/* <SignInSignOutButton /> */}
         <UnauthenticatedTemplate>
-          {/* <SignInButton /> */}
+          <SignInButton />
         </UnauthenticatedTemplate>
-
         <AuthenticatedTemplate>{/* <SignOutButton /> */}</AuthenticatedTemplate>
       </ToolbarGroup>
     </Toolbar>
