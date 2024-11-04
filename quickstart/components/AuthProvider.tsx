@@ -2,6 +2,8 @@ import { ReactNode } from "react";
 import { MsalProvider } from "@azure/msal-react";
 import { msalInstance } from "@/lib/msalConfig";
 import { AuthenticationResult, EventMessage, EventType } from "@azure/msal-browser";
+import { useRouter } from "next/navigation";
+import { CustomNavigationClient } from "@/lib/customNavigationClient";
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   msalInstance.initialize().then(() => {
@@ -19,6 +21,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       }
     });
   });
+
+  const router = useRouter();
+  const navigationClient = new CustomNavigationClient(router);
+  msalInstance.setNavigationClient(navigationClient);
   
   return <MsalProvider instance={msalInstance}>{children}</MsalProvider>;
 };
