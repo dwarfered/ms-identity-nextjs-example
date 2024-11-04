@@ -32,3 +32,9 @@ export function handleSignIn() {
     console.error(`loginRedirect failed: ${e}`);
   });
 }
+
+export function handleSignOut() {
+  msalInstance.logoutRedirect(loginRequest).catch((e) => {
+    console.error(`loginRedirect failed: ${e}`);
+  });
+}

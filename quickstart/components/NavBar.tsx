@@ -11,12 +11,11 @@ import {
   ToolbarGroup,
   DrawerProps,
 } from "@fluentui/react-components";
-// import SignInButton from "./SignInButton";
-// import SignOutButton from "./SignOutButton";
 import { useGlobalStyles } from "@/lib/utils/fluentUiHelper";
 import { APP_NAME } from "@/lib/constants";
 import { NavOverlay } from "./NavOverlay";
 import SignInButton from "./SignInButton";
+import SignOutButton from "./SignOutButton";
 
 const useStyles = makeStyles({
   toolbar: {
@@ -64,7 +63,9 @@ export const FarGroup = () => {
         <UnauthenticatedTemplate>
           <SignInButton />
         </UnauthenticatedTemplate>
-        <AuthenticatedTemplate>{/* <SignOutButton /> */}</AuthenticatedTemplate>
+        <AuthenticatedTemplate>
+          <SignOutButton />
+        </AuthenticatedTemplate>
       </ToolbarGroup>
     </Toolbar>
   );
