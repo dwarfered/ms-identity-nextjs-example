@@ -57,9 +57,3 @@ npm run build
 
 ### Sign In
 <img src="images/image2.png" width="300">
-
-### Signed In
-<img src="images/image3.png" width="300">
-
-### Request Profile Information
-<img src="images/image4.png" width="300">
