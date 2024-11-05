@@ -20,12 +20,11 @@ export const NavOverlay = () => {
   const styles = useGlobalStyles();
   const [isOpen, setIsOpen] = React.useState(false);
   const [type] = React.useState<DrawerType>("overlay");
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname();
 
   useEffect(() => {
-    // Close the drawer on route change
     setIsOpen(false);
-  }, [pathname]); // Trigger the effect when the path changes
+  }, [pathname]);
 
   return (
     <>
