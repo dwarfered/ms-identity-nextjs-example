@@ -9,6 +9,7 @@ import {
   webLightTheme,
 } from "@fluentui/react-components";
 import NavBar from "@/components/NavBar";
+import SideBar from "@/components/SideBar";
 
 const DynamicContextProvider = dynamic(
   () => import("@fluentui/react-components").then((mod) => mod.FluentProvider),
@@ -55,7 +56,7 @@ export default function RootLayout({
             <div className={styles.toolbar}><NavBar /></div>
             <div className={styles.mainContainer}>
               <div className={styles.sidePanel}>
-                {/* <SideBar/> */}
+                <SideBar/>
                 {/* Side panel content here */}
               </div>
               <div className={styles.container}>
