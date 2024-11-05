@@ -53,7 +53,7 @@ npm run build
 ## Screenshots
 
 ### Pending Sign In
-<img src="images/image1.png" width="300">
+<img src="images/image1.png" width="600">
 
 ### Sign In
-<img src="images/image2.png" width="300">
+<img src="images/image2.png" width="600">
