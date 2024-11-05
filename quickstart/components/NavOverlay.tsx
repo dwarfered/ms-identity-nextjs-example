@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Button,
   Drawer,
@@ -12,6 +12,7 @@ import { Dismiss24Regular, NavigationRegular } from "@fluentui/react-icons";
 import { APP_NAME } from "@/lib/constants";
 import { useGlobalStyles } from "@/lib/utils/fluentuiHelper";
 import NavMenu from "./NavMenu";
+import { usePathname } from "next/navigation";
 
 type DrawerType = Required<DrawerProps>["type"];
 
@@ -19,6 +20,12 @@ export const NavOverlay = () => {
   const styles = useGlobalStyles();
   const [isOpen, setIsOpen] = React.useState(false);
   const [type] = React.useState<DrawerType>("overlay");
+  const pathname = usePathname(); // Get the current path
+
+  useEffect(() => {
+    // Close the drawer on route change
+    setIsOpen(false);
+  }, [pathname]); // Trigger the effect when the path changes
 
   return (
     <>
