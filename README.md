@@ -20,7 +20,7 @@ This example is designed to showcase the basics of modern authentication within 
 
 - [Next.js by Vercel](https://nextjs.org/docs) framework documentation.
 - [Microsoft Authentication Library (MSAL) for JS](https://github.com/AzureAD/microsoft-authentication-library-for-js)
-- [Fluenet UI](https://developer.microsoft.com/en-us/fluentui#/) The official front-end framework for building experiences that fit seamlessly into Microsoft 365.
+- [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/) The official front-end framework for building experiences that fit seamlessly into Microsoft 365.
 - [Dev Fluent UI](https://react.fluentui.dev/?path=/docs/concepts-introduction--docs) the developer resource.
 - [SWR by Vercel](https://swr.vercel.app) React Hooks for Data Fetching
 > :information_source: "SWR is a strategy to first return the data from cache (stale), then send the fetch request (revalidate), and finally come with the up-to-date data."
