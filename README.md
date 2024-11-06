@@ -1,4 +1,4 @@
-# Microsoft Authentication (MSAL) with Nextjs and Microsoft Graph.
+# Microsoft Authentication Library (MSAL) with Nextjs and Microsoft Graph.
 
 <p align="center">
 <img src="images/repository-open-graph-template.png" width="600"/>
